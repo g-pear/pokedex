@@ -1,0 +1,200 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Section */
+#header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#header-container img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+#header-container h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px #2a75bb;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+
+/* Search Section */
+#search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#search-container label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#search-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 250px;
+  transition: border-color 0.3s;
+}
+
+#search-container input:focus {
+  border-color: #2a75bb;
+  outline: none;
+}
+
+#search-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ffcc00;
+  border: 2px solid #2a75bb;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px;
+}
+
+#search-container button:hover {
+  background-color: #ffdd33;
+  transform: translateY(-2px);
+}
+
+/* Pokedex Section */
+#pokedex {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ff0000; /* Red Pokedex background */
+  color: white; /* Set text color to white for better contrast */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+#pokedex h2,
+#pokedex h3 {
+  color: #ffcc00; /* Yellow headings to match Pokémon theme */
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px #2a75bb;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+}
+
+th {
+  text-align: left;
+  background-color: #2a75bb; /* Blue background for table headers */
+  color: white; /* White text for contrast */
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+  background-color: #fff; /* White background for table data */
+  color: #333; /* Dark text for better readability */
+  font-size: 1.2rem;
+}
+
+/* Pokémon Sprite */
+#pokeSprite {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: white; /* White background for the sprite */
+  border-radius: 10px; /* More square border */
+  padding: 20px;
+  border: 2px solid #2a75bb; /* Blue border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pokeSprite img {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 10px; /* More square border for sprite */
+  transition: transform 0.3s;
+}
+
+#pokeSprite img:hover {
+  transform: scale(1.1);
+}
+
+/* Base Stats Table */
+table th {
+  background-color: #2a75bb; /* Blue background for all table headers */
+}
+
+table td {
+  background-color: #fff; /* White background for all table data cells */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #header-container img {
+    width: 180px;
+  }
+
+  #header-container h1 {
+    font-size: 2rem;
+  }
+
+  #search-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #search-container {
+    flex-direction: column;
+  }
+
+  #pokedex {
+    padding: 15px;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
+}
